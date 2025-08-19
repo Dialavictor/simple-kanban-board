@@ -18,7 +18,7 @@ function dragStart(ev) {
   ev.dataTransfer.setData("text/plain", this.id);
 }
 
-function dragEnd(ev) {
+function dragEnd() {
   this.classList.add("over");
 }
 
@@ -32,7 +32,7 @@ function dragEnter(ev) {
   this.classList.add("over");
 }
 
-function dragLeave(ev) {
+function dragLeave(_ev) {
   this.classList.remove("over");
 }
 
